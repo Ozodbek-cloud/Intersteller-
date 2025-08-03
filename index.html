@@ -6,108 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interstellar</title>
     <link rel="icon" href="neptune.png">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body,
-        html {
-            height: 100%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            overflow: hidden;
-        }
-
-        .video-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-            z-index: -1;
-        }
-
-        nav {
-            margin-top: 20px;
-            margin-left: 250px;
-            width: 1500px;
-            height: 120px;
-            position: fixed;
-            padding: 20px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(10px);
-            border-radius: 30px;
-            z-index: 2;
-            box-shadow: 5px 5px 5px #ffcc00;
-        }
-
-        nav .logo {
-            display:  flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: white;
-        }
-        nav .logo h2 {
-            font-size: 25px;
-            transition: 0.3s;
-        }
-        nav .logo h2:hover {
-            transform: translateY(-10px);
-            color: #ffcc00;
-        }
-
-        nav .nav-links a {            
-            margin-left: 40px;
-            text-decoration: none;
-            color: white;
-            transition: 0.3s;
-        }
-
-        nav .nav-links a:hover {
-            color: #ffcc00;
-            transform: translateY(-10px);
-        }
-
-        .content {
-            position: relative;
-            z-index: 1;
-            color: white;
-            text-align: center;
-            padding-top: 20%;
-            font-size: 2em;
-        }
-
-        button {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: 1px solid white;
-            padding: 12px 24px;
-            border-radius: 10px;
-            font-size: 1rem;
-            cursor: pointer;
-            backdrop-filter: blur(5px);
-            margin-top: 20px;
-        }
-
-        button:hover {
-            border:2px solid #ffcc00;
-            background-color: rgba(239, 185, 36, 0.1);
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <video id="bgVideo" class="video-bg" autoplay muted loop playsinline>
         <source src="Interstellar_Gargantua_black_hole_4K_live_wallpaper_for_free_windows.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
@@ -119,18 +21,66 @@
             <h2>INTERSTELLAR</h2>
         </div>
         <div class="nav-links">
-            <a href="#">Home</a>
+            <a href="#home-logo">Home</a>
             <a href="#">Gallery</a>
-            <a href="#">About</a>
+            <a href="#black-holes-about">About</a>
             <a href="#">Contact</a>
         </div>
     </nav>
 
-    <div class="content">
+    <div class="content" id="home-logo">
         <h1>Explore the Universe</h1>
         <button>Get Started</button>
     </div>
 
+    <main class="main-about">
+        <h2>Black Holes in Universe
+            <img src="galaxy.png" alt="galaxy" style="width: 70px; height: 70px;">
+        </h2>
+        <div class="main-box" id="black-holes-about">
+            <div class="box">
+                <img src="23aa3ebbfc6790d2fdfbd5afd953d1ea620e8f10.jpg" alt="gargantua">
+                <div class="about">
+                    <h2>Gargantua Black Hole</h2>
+                    <p>Gargantua is a fictional supermassive black hole featured in the film Interstellar. <br>It has a
+                        mass of 100 million<br>solar masses and rotates extremely rapidly.<br>Its gravitational pull and
+                        the distortion of light around<br>it were recreated in the film with a high degree of scientific
+                        accuracy.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Ton-618-seul-image-1.jpg" alt="gargantua">
+                <div class="about">
+                    <h2>Ton-618 Black Hole</h2>
+                    <p>TON 618 is a hyperluminous quasar and is home to oneof the most massive black<br>holes ever
+                        discovered. It is located<br>approximately 18.2 billion light-years away,<br>from Earth. The
+                        black hole at the center of TON 618 has an<br>estimated mass of 66 billion times the mass of our
+                        Sun. </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="evrenin-en-buyuk-karadeligi-phoenix-a-780x470.webp" alt="gargantua">
+                <div class="about">
+                    <h2>Phoenix A Black Hole</h2>
+                    <p>Phoenix A is a supermassive black hole, and the largest one currentlyknown, loca<br>ted at the
+                        center of the Phoenix<br>Cluster. It has an estimated mass of 100 billion<br>times that of our
+                        Sun. The Phoenix Cluster is a massive<br>galaxy cluster located 5.8 billion light-years away.
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="blackhole.jpeg" alt="gargantua">
+                <div class="about">
+                    <h2>Gaia BH1 Black Hole</h2>
+                    <p>Gaia BH1 is a binary star system located about 1,560 light<br>years from Earth in the
+                        constellation Ophiuchus. It's notable because it contains a<br>stellar-mass black hole and a
+                        Sun-like star, making it the<br>known such system to our solar system.<br>The black hole is
+                        estimated to be about 10 times the mass of our sun </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
 </body>
 
 </html>
