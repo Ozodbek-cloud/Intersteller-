@@ -88,6 +88,7 @@
             backdrop-filter: blur(5px);
             margin-top: 20px;
         }
+       
 
         button:hover {
             border:2px solid #ffcc00;
@@ -135,4 +136,19 @@
         .video-for {
             width: 0;
             height: 0;
+        }
+        .footer {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1900px;
+            height: 100px;
+            backdrop-filter: blur(10px);
+        }
+        .hero {
+            font-size: 30px;
+            gap: 10px;
+            color: #ffcc00;
+            font-family: 'Times New Roman', Times, serif;
         }
